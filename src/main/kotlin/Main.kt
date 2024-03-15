@@ -7,12 +7,7 @@ fun main(args: Array<String>) {
     var sumaColum = Array(m[0].size){0}
 
 
-    for (f in m.indices){
-        for (c in m[f].indices){
-            print("${m[f][c]} ")
-        }
-        println()
-    }
+    imprimirMatriz(m)
     var f: Int = 0
     var c: Int = 0
 
@@ -25,6 +20,15 @@ fun main(args: Array<String>) {
     println(Arrays.toString(sumaColum))
 
 
+}
+
+private fun imprimirMatriz(m: Array<Array<Int>>) {
+    for (f in m.indices) {
+        for (c in m[f].indices) {
+            print("${m[f][c]} ")
+        }
+        println()
+    }
 }
 
 private fun sumarFilas(
